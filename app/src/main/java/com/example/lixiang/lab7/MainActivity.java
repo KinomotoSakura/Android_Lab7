@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button ok = (Button)findViewById(R.id.ok_button);
         Button clear = (Button)findViewById(R.id.clear_button);
 
-        final SharedPreferences sharedPref = getSharedPreferences("MY_KEY", MODE_PRIVATE);
+        final SharedPreferences sharedPref = getSharedPreferences("MY_PREFERENCE", MODE_PRIVATE);
         final String key = sharedPref.getString("KEY_SCORE", "n");
 
         if(key.equals("n")){
